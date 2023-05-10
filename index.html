@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">.
+    <title>Document</title>
+</head>
+<body>
+    <section class="booking-form">
+        <div class="container">
+            <h1>Бронирование переговорки</h1>
+            <form id="booking-form">
+                <div class="form-control">
+                    <label for="tower">Башня</label>
+                    <select id="towers" name="tower">
+                        <option value="none" selected disabled hidden>Выберите башню</option>
+                        <option>A</option>
+                        <option>B</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="floor">Этаж</label>
+                    <select id="floors" name="floor">
+                        <option value="none" selected disabled hidden>Выберите этаж</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="numroom">Номер переговорной</label>
+                    <select id="rooms" name="numroom">
+                        <option value="none" selected disabled hidden>Выберите переговорную</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="datetime">Дата и время</label>
+                    <input type="datetime-local" id="DatetimeLocal" name="datetime">
+                </div>
+                <div class="form-control">
+                    <label for="message">Комментарий</label>
+                    <textarea id="message" name="message" rows="3" cols="23"></textarea>
+                </div>
+                <button id="submitbut" class="btn" type="submit">Отправить</button>
+                <button id="clearbut" class="btn" type="reset">Очистить</button>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="script/tojson.js"></script>
+</body>
+</html>
